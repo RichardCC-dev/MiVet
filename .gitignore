@@ -1,16 +1,30 @@
 # Dependencias
+node_modules/
 /backend/node_modules/
 /frontend/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Variables de entorno
 # ¡IMPORTANTE! No subir archivos .env a Git
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 /backend/.env
 /frontend/.env
 *.local
 
 # Build artifacts y caché
 /frontend/dist/
+/frontend/build/
 /frontend/.vite/
+/backend/dist/
+/backend/build/
+coverage/
+.nyc_output/
 
 # Logs
 logs
@@ -24,15 +38,59 @@ lerna-debug.log*
 # Directorios y archivos de editores de código
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*~
 
 # Archivos generados por el sistema operativo
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+
+# Archivos sensibles
+*.pem
+*.key
+*.cert
+*.crt
+
+# Documentación temporal y notas personales
 docs/run.txt
+**/config_*.txt
+notas.txt
+TODO.txt
+PREGUNTAS_RESPUESTAS.md
+GUIA_PROYECTO.md
+GITHUB_CHECKLIST.md
+*_INTERNO.md
+*_NOTAS.md
+
+# Archivos de base de datos
+*.sqlite
+*.sqlite3
+*.db
+
+# Archivos de subida/uploads
+uploads/
+temp/
+
+# Archivos de prueba y desarrollo
+test-results/
+.nyc_output/
