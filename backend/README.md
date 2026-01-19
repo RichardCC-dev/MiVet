@@ -8,7 +8,7 @@ API REST para el sistema de gestión veterinaria MiVet.
 - MySQL + Sequelize ORM
 - JWT para autenticación
 - Stripe para pagos
-- HuggingFace API para IA
+- Gemini API para IA
 - Nodemailer para emails
 
 ## 📦 Instalación
@@ -30,7 +30,7 @@ Variables requeridas:
 - `DB_*`: Credenciales de MySQL
 - `JWT_SECRET`: Clave secreta para tokens
 - `STRIPE_SECRET_KEY`: Clave de Stripe
-- `HUGGINGFACE_API_KEY`: Token de HuggingFace
+- `Gemini_API_KEY`: Token de Gemini
 
 ## 🗄️ Base de Datos
 
